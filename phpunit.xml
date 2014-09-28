@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="false"
+        >
+    <php>
+        <const name="DB_TYPE" value="mysql" />
+        <const name="DB_HOST" value="127.0.0.1" />
+        <const name="DB_NAME" value="php-mvc" />
+        <const name="DB_USER" value="root" />
+        <const name="DB_PASS" value="" />
+    </php>
+    <testsuites>
+        <testsuite name="Application-Tests">
+            <directory>application/tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
